@@ -24,6 +24,10 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* New Style */
 
 * {
@@ -59,14 +63,14 @@ body * {
   line-height: 24px;
   margin-top: 8px;
 }
-
-ul {
+#main-links {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 24px 0;
 }
 
-ul li {
+#main-links li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,9 +82,18 @@ ul li {
   -webkit-backdrop-filter: blur(4px);
   font-weight: 500;
   transition: background-color 0.5s, border 0.5s;
+  cursor: pointer;
 }
 
-ul li:hover {
+#main-links li:hover {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #ffffff;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px 0;
+  font-size: 24px;
 }
