@@ -21,23 +21,28 @@ time, mark, audio, video {
 }
 
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 
 /* New Style */
 
-body * {
-  font-family: 'Inter', sans-serif;
-  color: #ffffff;
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: url(../img/bg_dark_mobile.jpg) no-repeat top center/cover;
 }
 
+body * {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
 #container {
-  width: 360px;
+  max-width: 360px;
   margin: 56px auto 0;
+  padding: 0 24px;
 }
 
 #profile {
@@ -56,5 +61,26 @@ body {
 }
 
 ul {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-weight: 500;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+ul li:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ffffff;
 }
