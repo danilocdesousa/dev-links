@@ -30,17 +30,27 @@ a {
 
 /* New Style */
 
+:root {
+  --text-white: #ffffff;
+  --bg-url: url(../img/bg_dark_mobile.jpg);
+}
+
+.light {
+  --text-white: #000000;
+  --bg-url: url(../img/bg_light_mobile.jpg);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: url(../img/bg_dark_mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: 'Inter', sans-serif;
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 #container {
@@ -87,7 +97,7 @@ body * {
 
 #main-links li:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #ffffff;
+  border: 1px solid var(--text-white);
 }
 
 #social-links {
