@@ -33,11 +33,19 @@ a {
 :root {
   --text-white: #ffffff;
   --bg-url: url(../img/bg_dark_mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(255, 255, 255, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
 }
 
 .light {
   --text-white: #000000;
   --bg-url: url(../img/bg_light_mobile.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -85,8 +93,8 @@ body * {
   justify-content: center;
   align-items: center;
   padding: 16px 24px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -96,7 +104,7 @@ body * {
 }
 
 #main-links li:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--surface-color-hover);
   border: 1px solid var(--text-white);
 }
 
@@ -116,7 +124,7 @@ body * {
 }
 
 #social-links div:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--highlight-color);
 }
 
 #social-links div a {
