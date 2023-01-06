@@ -44,7 +44,7 @@ a {
 .light {
   --text-white: #000000;
   --bg-url: url(../img/bg_light_mobile.jpg);
-  --bg-color: #eeeeee;
+  --bg-color: #fdfdfd;
   --radial-gradient-color: rgba(0, 0, 0, 0.05);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
