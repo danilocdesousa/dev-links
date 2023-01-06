@@ -33,6 +33,8 @@ a {
 :root {
   --text-white: #ffffff;
   --bg-url: url(../img/bg_dark_mobile.jpg);
+  --bg-color: #191919;
+  --radial-gradient-color: rgba(255, 255, 255, 0.05);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
@@ -42,6 +44,8 @@ a {
 .light {
   --text-white: #000000;
   --bg-url: url(../img/bg_light_mobile.jpg);
+  --bg-color: #eeeeee;
+  --radial-gradient-color: rgba(0, 0, 0, 0.05);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -53,7 +57,10 @@ a {
 }
 
 body {
-  background: var(--bg-url) no-repeat top center/cover;
+  background-color: var(--bg-color);
+    background-image: radial-gradient(var(--radial-gradient-color) 1.5px,transparent 0);
+    background-position: 0 0;
+    background-size: 25px 25px;
 }
 
 body * {
