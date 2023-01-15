@@ -20,7 +20,8 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -60,9 +61,9 @@ a {
 
 body {
   background-color: var(--bg-color);
-    background-image: radial-gradient(var(--radial-gradient-color) 1.5px,transparent 0);
-    background-position: 0 0;
-    background-size: 25px 25px;
+  background-image: radial-gradient(var(--radial-gradient-color) 1.5px, transparent 0);
+  background-position: 0 0;
+  background-size: 25px 25px;
 }
 
 body * {
@@ -107,7 +108,7 @@ body * {
 #switch button {
   width: 32px;
   height: 32px;
-  background: #ffffff var(  --switch-bg-url) no-repeat center;
+  background: #ffffff var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
   position: absolute;
