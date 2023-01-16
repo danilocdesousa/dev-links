@@ -67,7 +67,7 @@ Pull requests não estão sendo aceitos no momento.
 
 ## Autor
 
-Desenvolvido por [Danilo C. de Sousa](https://github.com/danilocdesousa)
+Desenvolvido por [Danilo de Sousa](https://github.com/danilocdesousa)
 
 ## Licença
 
